@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/toxicity"></script>
+    <script src="modelo.js" defer></script>
+    <title>Modelo De Toxicidad</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 2rem;
+        }
+        input, button {
+            padding: 0.5rem;
+            font-size: 1rem;
+        }
+        #resultado {
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Analizador de Toxicidad</h1>
+    <input type="text" id="texto" placeholder="Ingrese el texto">
+    <button id="btnAnalizar">Analizar</button>
+    <div id="resultado"></div>
+</body>
+    
+</html>
