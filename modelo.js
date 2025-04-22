@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () =>{
     let modelo;
 
-    toxicity.load(0.5).then(m => {
+    toxicity.load(0.9).then(m => {
         modelo = m;
         document.getElementById('resultado').innerText = "Modelo Cargado. Ingresá un texto";
     });
